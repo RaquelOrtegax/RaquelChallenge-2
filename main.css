@@ -10,6 +10,34 @@
     color: white;
     font-size: 100px;
 }
+.wrapper {
+  overflow: hidden;
+}
+
+#top {
+  background-image: url("../afbeeldingen/startup.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:100px;
+  height: 400px;
+  width: 100px;
+  position: relative;
+  animation: myanimation;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+@keyframes myanimation {
+  0% {
+    left: 0;
+    transform: translateX(-100%)
+  }
+  100% {
+    left: 100%;
+    transform: translateX(100%)
+  }
+}
 
 /* Media */
 
