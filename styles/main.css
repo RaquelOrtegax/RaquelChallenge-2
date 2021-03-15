@@ -1,0 +1,78 @@
+#clock {
+  height: 100px;
+  width: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  padding-top: 70px;
+  font-family: courier, monospace;
+  text-align: center;
+  color: white;
+  font-size: 100px;
+}
+.wrapper {
+  overflow: hidden;
+}
+
+#top {
+  background-image: url("../afbeeldingen/startup.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:100px;
+  height: 400px;
+  width: 100px;
+  position: relative;
+  animation: myanimation;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+@keyframes myanimation {
+  0% {
+    left: 0;
+    transform: translateX(-100%)
+  }
+  100% {
+    left: 100%;
+    transform: translateX(100%)
+  }
+}
+
+@media screen and (max-width: 800px){
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 800px){
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+
+}
+
+
+
+
+
+
+
+
+
