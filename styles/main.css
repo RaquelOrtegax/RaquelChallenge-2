@@ -28,13 +28,6 @@
   animation-timing-function: ease-in;
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20%;
-}
-
 @keyframes myanimation {
   0% {
     left: 0;
