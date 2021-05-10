@@ -1,15 +1,3 @@
-#clock {
-  height: 100px;
-  width: auto;
-  margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-  padding-top: 70px;
-  font-family: courier, monospace;
-  text-align: center;
-  color: white;
-  font-size: 100px;
-}
 .wrapper {
   overflow: hidden;
 }
@@ -28,6 +16,13 @@
   animation-timing-function: ease-in;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
 @keyframes myanimation {
   0% {
     left: 0;
@@ -36,5 +31,64 @@
   100% {
     left: 100%;
     transform: translateX(100%)
+  }
+}
+
+@media screen and (max-width: 800px){
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+  }
+
+  #clock {
+    height: 100px;
+    width: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    padding-top: 70px;
+    font-family: courier, monospace;
+    text-align: center;
+    color: #E8E4C9;
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 800px){
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+  }
+
+  #clock {
+    height: 100px;
+    width: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    padding-top: 70px;
+    font-family: courier, monospace;
+    text-align: center;
+    color: white;
+    font-size: 75px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  #clock {
+    height: 100px;
+    width: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    padding-top: 70px;
+    font-family: courier, monospace;
+    text-align: center;
+    color: #F0F8FE;
+    font-size: 150px;
   }
 }
